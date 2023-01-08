@@ -7,7 +7,7 @@ from pyspark.sql.types import *
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("test1").getOrCreate()
 
-my_list = [1,2,3,4]
+my_list = [1,2,3,4,5,6,7,8]
 
 df = spark.createDataFrame(my_list,IntegerType())
 df.show()
